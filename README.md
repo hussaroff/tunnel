@@ -5,11 +5,11 @@
 <h1 align="center">Tunnel</h1>
 
 <p align="center">
-  <b>Умный Xray-клиент с автонастройкой, failover-режимом и устойчивостью к DPI / whitelist-фильтрации.</b>
+  <b>Не просто Xray-конфигуратор. Tunnel помогает найти рабочее подключение там, где обычные VPN часто не справляются.</b>
 </p>
 
 <p align="center">
-  Современный VPN-клиент с акцентом на стабильность, автоматизацию и удобство использования в ограниченных сетях.
+  Xray/VLESS · готовые маршруты · проверка серверов · failover · DPI / whitelist-oriented logic
 </p>
 
 <p align="center">
@@ -25,10 +25,11 @@
 ## Навигация
 
 - [О проекте](#о-проекте)
+- [Интерфейс приложения](#интерфейс-приложения)
 - [Почему Tunnel](#почему-tunnel)
+- [Почему это не обычный Xray-клиент](#почему-это-не-обычный-xray-клиент)
 - [Возможности](#возможности)
 - [Дизайн](#дизайн)
-- [Интерфейс приложения](#интерфейс-приложения)
 - [Основные экраны](#основные-экраны)
 - [Как использовать Tunnel при whitelist-фильтрации](#как-использовать-tunnel-при-whitelist-фильтрации)
 - [Особенности failover-логики](#особенности-failover-логики)
@@ -49,6 +50,21 @@
 
 ---
 
+## Интерфейс приложения
+
+<p align="center">
+  <img src="assets/screens/home.jpg" alt="Tunnel home screen" width="230" />
+  <img src="assets/screens/survey.jpg" alt="Tunnel server feedback screen" width="230" />
+  <img src="assets/screens/servers.jpg" alt="Tunnel servers screen" width="230" />
+</p>
+
+<p align="center">
+  <img src="assets/screens/settings-1.jpg" alt="Tunnel language settings screen" width="230" />
+  <img src="assets/screens/settings-2.jpg" alt="Tunnel performance and failover settings" width="230" />
+</p>
+
+---
+
 ## Почему Tunnel
 
 Обычные VPN-клиенты часто требуют ручной настройки, плохо адаптируются к фильтрации трафика и не рассчитаны на централизованное управление доступом.
@@ -61,6 +77,22 @@
 - аварийного переключения между маршрутами;
 - учёта работы серверов в условиях DPI и whitelist-фильтрации;
 - сбора обратной связи от пользователей.
+
+---
+
+## Почему это не обычный Xray-клиент
+
+Большинство Xray/VLESS-клиентов работают как конфигураторы: пользователь сам ищет конфиг, вставляет ссылку, проверяет серверы и разбирается, почему подключение не работает.
+
+Tunnel строится иначе:
+
+| Обычные Xray-клиенты | Tunnel |
+|---|---|
+| Пользователь сам ищет конфиг | Готовые маршруты могут быть внутри приложения |
+| Серверы проверяются вручную | Есть проверка доступности серверов |
+| При сбое пользователь разбирается сам | Есть failover-логика |
+| Интерфейс часто технический | Упор на современный мобильный UX |
+| Главный сценарий — импорт конфига | Главный сценарий — найти рабочее подключение |
 
 ---
 
@@ -126,21 +158,6 @@ Tunnel создаётся не как обычный технический VPN-
 
 Визуальный образ Tunnel строится вокруг идеи космоса, туннеля и стабильного защищённого маршрута.  
 Это делает приложение узнаваемым и отличает его от типичных утилитарных VPN-клиентов.
-
----
-
-## Интерфейс приложения
-
-<p align="center">
-  <img src="assets/screens/home.jpg" alt="Tunnel home screen" width="230" />
-  <img src="assets/screens/survey.jpg" alt="Tunnel server feedback screen" width="230" />
-  <img src="assets/screens/servers.jpg" alt="Tunnel servers screen" width="230" />
-</p>
-
-<p align="center">
-  <img src="assets/screens/settings-1.jpg" alt="Tunnel language settings screen" width="230" />
-  <img src="assets/screens/settings-2.jpg" alt="Tunnel performance and failover settings" width="230" />
-</p>
 
 ---
 
