@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  Xray/VLESS · готовые маршруты · проверка серверов · failover · DPI / whitelist-oriented logic · Smart Connect 3.0<br /><br />
+  Xray/Hev · Сервера уже внутри · проверка серверов · fallback · DPI / whitelist-oriented logic · Smart Connect 4.0<br /><br />
   <b>Протестировано в режимах Белых Списков в Московской Области, Удмуртии (крайне агрессивные DPI, БС), Самарской Области, Волгограде, Туапсе, Ростов-на-Дону, Псков, Владивосток, в Крыму и многих других регионах.</b><br /><br />
   Наши бесплатные сервера для обхода белых списков <a href="https://github.com/hussaroff/lte-universal-checked">тут</a>. 
 </p>
@@ -50,7 +50,7 @@
 
 Главная идея Tunnel — не просто подключить пользователя к VPN, а сохранить доступ к интернету даже в условиях агрессивной фильтрации трафика.
 
-Текущая версия Tunnel-0.12.0. Результатом обновлений стало повышение отклика при Белых Списках до 99.999%. 
+Текущая версия Tunnel-0.13.1. Результатом обновлений стало повышение отклика при Белых Списках до 99.999%. 
 
 ---
 
@@ -232,19 +232,19 @@ Tunnel поддерживает следующие Android ABI:
 User App
    │
    ├── Account binding
-   ├── Auto config loader
-   ├── Failover manager
+   ├── Auto config/subscription loader
+   ├── Smart connect
    ├── Lite performance mode
    ├── Server feedback
    │
    ▼
 Tunnel Backend
    │
-   ├── Config storage
+   ├── Config/subscription storage
    ├── Access control
    ├── Server status monitor
    ├── Route selection logic
    ├── Feedback processing
    │
    ▼
-Xray Nodes
+Xray / HEV Nodes
